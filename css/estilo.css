@@ -88,9 +88,21 @@ ul {
 }
 
 .menu-link.active .menu-texto,
-.menu-link:hover .menu-texto {
+.menu-link:hover .menu-texto{
   color: var(--cor-hover);
 }
+
+.social-icon {
+  color: var(--cor-icone);
+  font-size: 1.5rem; /* tamanho fonte */
+}
+
+
+.menu-link:hover .social-icon {
+  color: var(--cor-hover);
+    transition: all 0.3s ease-in-out;
+}
+
 
 .logo {
   width: 3.25rem;
