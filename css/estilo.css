@@ -1,3 +1,12 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --fonte-textos: "Quicksand", sans-serif;
+  --fonte-titulo: "Lexend", sans-serif;
+  --fonte-subtitulo: "Nunito", sans-serif;
+}
+
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
@@ -56,6 +65,11 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 2.5rem; /* tamanho fonte */
+  font-weight: 200; /* peso da fonte */
+}
+
 #header {
   display: flex;
   flex-wrap: row wrap;
@@ -85,10 +99,12 @@ ul {
   text-transform: uppercase;
   font-size: 0.75rem; /* tamanho fonte */
   font-weight: 600; /* peso da fonte */
+  font-family: var(--fonte-textos);
+  text-rendering: optimizeLegibility;
 }
 
 .menu-link.active .menu-texto,
-.menu-link:hover .menu-texto{
+.menu-link:hover .menu-texto {
   color: var(--cor-hover);
 }
 
@@ -97,12 +113,10 @@ ul {
   font-size: 1.5rem; /* tamanho fonte */
 }
 
-
 .menu-link:hover .social-icon {
   color: var(--cor-hover);
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 
 .logo {
   width: 3.25rem;
@@ -172,6 +186,42 @@ ul {
   font-weight: 600; /* peso da fonte */
   padding: 0.5rem 0;
 }
+
+/* Flexbox */
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* centralização */
+.main-content .video {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.video iframe {
+ aspect-ratio: 16/9;
+ width: 60%;
+}
+
+
 
 @media (min-width: 768px) {
   /* A partir de 768px ate o infinito */
