@@ -303,6 +303,9 @@ strong {
 .video iframe {
   aspect-ratio: 16/9;
   width: 60%;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 /* voltar e atualizar */
