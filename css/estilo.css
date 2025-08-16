@@ -94,8 +94,6 @@ h3 {
   text-rendering: optimizeLegibility;
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -332,9 +330,83 @@ strong {
   text-rendering: optimizeLegibility;
 }
 
+/* PROJETOS     PROJETOS    PROJETOS   PROJETOS   PROJETOS   PROJETOS   PROJETOS  PROJETOS   PROJETOS   PROJETOS   PROJETOS */
+
 .projetos {
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  scroll-margin-top: 2.5rem; /* ajuste conforme a altura do seu header */
 }
+
+.projeto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projeto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card-cover {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem; /* tamanho fonte */
+  font-weight: 00; /* peso da fonte */
+  font-family: var(--fonte-textos);
+  text-rendering: optimizeLegibility;
+  color: var(--cor-titulo);
+}
+
+.card-description {
+  font-size: 1.5rem; /* tamanho fonte */
+  font-weight: 200; /* peso da fonte */
+  font-family: var(--fonte-textos);
+  text-rendering: optimizeLegibility;
+  color: var(--cor-texto);
+}
+
+.card-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-item i {
+  font-size: 1.1rem; /* tamanho fonte */
+}
+
+.card-item {
+  display: flex;
+  gap: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+.card-lista :hover {
+  color: var(--cor-hover);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
 
 @media (max-width: 768px) {
   #home {
@@ -372,6 +444,20 @@ strong {
 
   h1 {
     font-size: 5rem; /* tamanho fonte */
+  }
+}
+
+@media (min-width: 992px) {
+  .projeto-card {
+    flex-direction: row;
+  }
+
+  .card-cover {
+    width: 55%;
+  }
+
+  .projeto-card.card-reverse {
+    flex-direction: row-reverse;
   }
 }
 
