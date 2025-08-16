@@ -45,6 +45,10 @@ html[data-theme="light"] .logo {
   filter: invert(1);
 }
 
+html {
+  scroll-behavior: smooth; /* Suaviza o scroll */
+}
+
 * {
   margin: 0; /* Regula a margin para ficar padrão */
   padding: 0; /* Regula o padding para ficar padrão */
@@ -421,7 +425,18 @@ strong {
   #home {
     padding-top: 6rem;
   }
+ 
+  .projetos,
+  .sobre {
+    padding: 2rem 1rem 2rem 1rem; /* ajuste para mobile */
+  }
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
 }
+
 
 @media (min-width: 768px) {
   /* A partir de 768px ate o infinito */
@@ -440,10 +455,10 @@ strong {
   }
 
   #home,
-  .projetos,
-  .sobre {
-    padding: 8rem 6rem 4rem 6rem; /* ajuste para mobile */
-  }
+.projetos,
+.sobre {
+  padding: 8rem 6rem 4rem 6rem; /* ajuste para mobile */
+}
 
   .main-content {
     display: flex;
