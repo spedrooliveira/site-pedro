@@ -432,11 +432,15 @@ strong {
   .projetos,
   .sobre {
     padding: 2rem 1rem 2rem 1rem; /* ajuste para mobile */
+    scroll-margin-top: 4rem; /* ajuste conforme a altura do seu header */
+
   }
   .video iframe {
     width: 100%;
     height: 100%;
   }
+
+
   
 }
 
