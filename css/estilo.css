@@ -430,13 +430,28 @@ strong {
 
 /* sobre mim */
 
-.sobre-logo {
-  width: 20rem;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  scroll-margin-top: 2.5rem; 
 }
+
+.sobre-content1,
+.sobre-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  text-align: center;
+}
+
+.sobre-logo {
+  width: 100%;
+  border-radius: 50%;
+
+}
+
 
 
 
