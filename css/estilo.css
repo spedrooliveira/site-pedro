@@ -182,9 +182,15 @@ strong {
 #toggleTheme {
   cursor: pointer;
   color: var(--cor-icone);
-  font-size: 1.2rem; /* tamanho fonte */
+  font-size: 1.5rem; /* tamanho fonte */
   transition: all 0.3s ease-in-out;
 }
+
+#toggleTheme:hover {
+  color: var(--cor-hover);
+  transition: all 0.3s ease-in-out;
+}
+
 
 .btn-menu-mobile {
   /* menu hamburguer, estilo e animação */
@@ -422,6 +428,17 @@ strong {
   width: auto;
 }
 
+/* sobre mim */
+
+.sobre-logo {
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -479,17 +496,17 @@ strong {
 }
 
 @media (min-width: 992px) {
-  .projeto-card {
-    flex-direction: row;
-  }
+    .projeto-card {
+        flex-direction: row;
+    }
+    .card-cover {
+        width: 55%;
+    }
 
-  .card-cover {
-    width: 55%;
-  }
-
-  .projeto-card.card-reverse {
-    flex-direction: row-reverse;
-  }
+    .projeto-card.card-reverse {
+        flex-direction: row-reverse; /* Espelho */
+        /* justify-content: space-between; */
+    }
 }
 
 @media (min-width: 1200px) {
@@ -505,11 +522,26 @@ strong {
 }
 
 @media (min-width: 1400px) {
-  h1 {
-    font-size: 6.25rem; /* tamanho fonte */
-  }
+    h1 {
+        font-size: 6.25rem;
+    }
 
-  h2 {
-    font-size: 4.5rem; /* tamanho fonte */
-  }
+    h2 {
+        font-size: 4rem;
+    }
+
+    /* SOBRE */
+    h3 {
+        font-size: 3.25rem;
+    }
+    
+    .conhecimento,
+    .projetos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
+    .conhecimento h2 {
+        font-size: 3.5rem;
+        text-align: start;
+    }
 }
