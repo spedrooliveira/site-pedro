@@ -482,7 +482,7 @@ strong {
   align-items: flex-start;
   gap: 2rem;
   text-align: center;
-  
+
 }
 
 .sobre-logo {
@@ -519,7 +519,7 @@ strong {
   text-align: center;
   text-align: justify;
   gap: 8rem;
-  
+
 }
 
 .sobre-content2 .col1 .row1,
@@ -626,13 +626,16 @@ strong {
     gap: 4rem;
   }
 
-
-
-
   .card-button .btn,
   .description-button .btn {
     width: auto;
   }
+
+  .sobre-content1,
+  .sobre-content2 {
+    grid-template-columns: 34% 60%;
+  }
+
 }
 
 
