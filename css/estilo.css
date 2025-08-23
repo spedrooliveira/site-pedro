@@ -24,9 +24,10 @@
 
   --icone-menu-mobile: #e9e9e9;
 }
+
 /* Definir cores tema Light */
 :root[data-theme="light"] {
-  --cor-fundo: #f0f0f0;
+  --cor-fundo: #f5f5f5;
   --cor-fundo-secundario: #e4e4e4;
   --cor-texto: #808080;
   --cor-titulo: #202020;
@@ -46,15 +47,20 @@ html[data-theme="light"] .logo {
 }
 
 html {
-  scroll-behavior: smooth; /* Suaviza o scroll */
+  scroll-behavior: smooth;
+  /* Suaviza o scroll */
 }
 
 * {
-  margin: 0; /* Regula a margin para ficar padrão */
-  padding: 0; /* Regula o padding para ficar padrão */
+  margin: 0;
+  /* Regula a margin para ficar padrão */
+  padding: 0;
+  /* Regula o padding para ficar padrão */
   box-sizing: border-box;
-  scrollbar-width: thin; /* Define a largura da barra de rolagem */
-  scrollbar-color: var(--cor-fundo-secundario) transparent; /* Define a cor da barra de rolagem e do fundo */
+  scrollbar-width: thin;
+  /* Define a largura da barra de rolagem */
+  scrollbar-color: var(--cor-fundo-secundario) transparent;
+  /* Define a cor da barra de rolagem e do fundo */
 }
 
 body {
@@ -74,28 +80,40 @@ ul {
 }
 
 h1 {
-  font-size: 2.5rem; /* tamanho fonte */
-  font-weight: 200; /* peso da fonte */
+  font-size: 2.5rem;
+  /* tamanho fonte */
+  font-weight: 200;
+  /* peso da fonte */
   font-family: var(--fonte-titulo);
   text-rendering: optimizeLegibility;
 }
 
 h2 {
-  font-size: 2rem; /* tamanho fonte */
+  font-size: 2rem;
+  /* tamanho fonte */
   text-align: center;
-  letter-spacing: 0.5rem; /* espaçamento entre letras */
+  letter-spacing: 0.5rem;
+  /* espaçamento entre letras */
   text-transform: uppercase;
-  font-weight: 200; /* peso da fonte */
+  font-weight: 200;
+  /* peso da fonte */
   font-family: var(--fonte-subtitulo);
   text-rendering: optimizeLegibility;
 }
 
 h3 {
-  font-size: 2rem; /* tamanho fonte */
+  font-size: 2rem;
+  /* tamanho fonte */
   text-align: left;
-  font-weight: 200; /* peso da fonte */
+  font-weight: 200;
+  /* peso da fonte */
   font-family: var(--fonte-textos);
   text-rendering: optimizeLegibility;
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: var(--fonte-textos);
 }
 
 h1,
@@ -108,12 +126,14 @@ h3 {
 p,
 span,
 li {
-  font-size: 1rem; /* tamanho fonte */
+  font-size: 1rem;
+  /* tamanho fonte */
   font-family: var(--fonte-textos);
 }
 
 strong {
-  font-weight: 400; /* peso da fonte */
+  font-weight: 400;
+  /* peso da fonte */
 }
 
 #header {
@@ -143,8 +163,10 @@ strong {
 .menu-texto {
   color: var(--cor-texto);
   text-transform: uppercase;
-  font-size: 0.85rem; /* tamanho fonte */
-  font-weight: 600; /* peso da fonte */
+  font-size: 0.85rem;
+  /* tamanho fonte */
+  font-weight: 600;
+  /* peso da fonte */
   font-family: var(--fonte-textos);
   text-rendering: optimizeLegibility;
 }
@@ -156,7 +178,8 @@ strong {
 
 .social-icon {
   color: var(--cor-icone);
-  font-size: 1.5rem; /* tamanho fonte */
+  font-size: 1.5rem;
+  /* tamanho fonte */
 }
 
 .menu-link:hover .social-icon {
@@ -182,7 +205,8 @@ strong {
 #toggleTheme {
   cursor: pointer;
   color: var(--cor-icone);
-  font-size: 1.5rem; /* tamanho fonte */
+  font-size: 1.5rem;
+  /* tamanho fonte */
   transition: all 0.3s ease-in-out;
 }
 
@@ -197,7 +221,8 @@ strong {
   background: transparent;
   color: var(--icone-menu-mobile);
   border: none;
-  font-size: 1.8rem; /* tamanho fonte */
+  font-size: 1.8rem;
+  /* tamanho fonte */
   padding: 0.5rem;
   margin-left: 1rem;
   display: flex;
@@ -234,8 +259,10 @@ strong {
 
 .menu-mobile .menu-link {
   display: inline-block;
-  font-size: 1rem; /* tamanho fonte */
-  font-weight: 600; /* peso da fonte */
+  font-size: 1rem;
+  /* tamanho fonte */
+  font-weight: 600;
+  /* peso da fonte */
   padding: 1rem 0;
 }
 
@@ -320,7 +347,8 @@ strong {
 .projetos,
 .sobre,
 .contato {
-  padding-top: 2.5rem 1rem; /* ajuste conforme a altura do seu header */
+  padding-top: 2.5rem 1rem;
+  /* ajuste conforme a altura do seu header */
 }
 
 .conhecimento {
@@ -336,9 +364,12 @@ strong {
 .conhecimento h2 {
   text-align: center;
   text-transform: none;
-  letter-spacing: 0rem; /* espaçamento entre letras */
-  font-size: 1.75rem; /* tamanho fonte */
-  font-weight: 200; /* peso da fonte */
+  letter-spacing: 0rem;
+  /* espaçamento entre letras */
+  font-size: 1.75rem;
+  /* tamanho fonte */
+  font-weight: 200;
+  /* peso da fonte */
   font-family: var(--fonte-subtitulo);
   text-rendering: optimizeLegibility;
 }
@@ -349,7 +380,8 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  scroll-margin-top: 2.5rem; /* ajuste conforme a altura do seu header */
+  scroll-margin-top: 2.5rem;
+  /* ajuste conforme a altura do seu header */
 }
 
 .projeto-container {
@@ -381,16 +413,20 @@ strong {
 }
 
 .card-title {
-  font-size: 1.5rem; /* tamanho fonte */
-  font-weight: 00; /* peso da fonte */
+  font-size: 1.5rem;
+  /* tamanho fonte */
+  font-weight: 00;
+  /* peso da fonte */
   font-family: var(--fonte-textos);
   text-rendering: optimizeLegibility;
   color: var(--cor-titulo);
 }
 
 .card-description {
-  font-size: 1.5rem; /* tamanho fonte */
-  font-weight: 200; /* peso da fonte */
+  font-size: 1.5rem;
+  /* tamanho fonte */
+  font-weight: 200;
+  /* peso da fonte */
   font-family: var(--fonte-textos);
   text-rendering: optimizeLegibility;
   color: var(--cor-texto);
@@ -401,13 +437,15 @@ strong {
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .card-lista :hover {
   color: var(--cor-hover);
   transition: all 0.3s ease-in-out;
 }
 
 .card-item i {
-  font-size: 1.1rem; /* tamanho fonte */
+  font-size: 1.1rem;
+  /* tamanho fonte */
 }
 
 .card-item {
@@ -434,7 +472,7 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  scroll-margin-top: 2.5rem; 
+  scroll-margin-top: 2.5rem;
 }
 
 .sobre-content1,
@@ -444,14 +482,54 @@ strong {
   align-items: flex-start;
   gap: 2rem;
   text-align: center;
+  
 }
 
 .sobre-logo {
   width: 100%;
   border-radius: 50%;
-  align-items: center;
-
+  pointer-events: none;
 }
+
+.sobre-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre-description p {
+  font-size: 1.5rem;
+  color: var(--cor-titulo);
+}
+
+
+.sobre-icones {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sobre-icones i {
+  font-size: 1.25rem;
+}
+
+.sobre-content2 .col1,
+.sobre-content2 .col2 {
+  display: flex;
+  text-align: center;
+  text-align: justify;
+  gap: 8rem;
+  
+}
+
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
 
 
 
@@ -461,20 +539,23 @@ strong {
   #home {
     padding-top: 6rem;
   }
- 
+
   .projetos,
   .sobre {
-    padding: 2rem 1rem 2rem 1rem; /* ajuste para mobile */
-    scroll-margin-top: 4rem; /* ajuste conforme a altura do seu header */
+    padding: 2rem 1rem 2rem 1rem;
+    /* ajuste para mobile */
+    scroll-margin-top: 4rem;
+    /* ajuste conforme a altura do seu header */
 
   }
+
   .video iframe {
     width: 100%;
     height: 100%;
   }
 
 
-  
+
 }
 
 
@@ -495,10 +576,11 @@ strong {
   }
 
   #home,
-.projetos,
-.sobre {
-  padding: 8rem 6rem 4rem 6rem; /* ajuste para mobile */
-}
+  .projetos,
+  .sobre {
+    padding: 8rem 6rem 4rem 6rem;
+    /* ajuste para mobile */
+  }
 
   .main-content {
     display: flex;
@@ -507,57 +589,89 @@ strong {
   }
 
   h1 {
-    font-size: 5rem; /* tamanho fonte */
+    font-size: 5rem;
+    /* tamanho fonte */
   }
 }
 
 @media (min-width: 992px) {
-    .projeto-card {
-        flex-direction: row;
-    }
-    .card-cover {
-        width: 55%;
-    }
+  .projeto-card {
+    flex-direction: row;
+  }
 
-    .projeto-card.card-reverse {
-        flex-direction: row-reverse; /* Espelho */
-        /* justify-content: space-between; */
-    }
+  .card-cover {
+    width: 55%;
+  }
+
+  .projeto-card.card-reverse {
+    flex-direction: row-reverse;
+    /* Espelho */
+    /* justify-content: space-between; */
+  }
+
+  .sobre {
+    gap: 5rem;
+  }
+
+  .description-button {
+    justify-content: flex-start;
+  }
+
+  .sobre-content1,
+  .sobre-content2 {
+    display: grid;
+    grid-template-columns: 34% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+
+
+
+  .card-button .btn,
+  .description-button .btn {
+    width: auto;
+  }
 }
+
 
 @media (min-width: 1200px) {
   /* A partir de 1024px ate o infinito */
 
   #home {
-    padding: 6rem 6rem 2rem; /* ajuste para desktop */
+    padding: 6rem 6rem 2rem;
+    /* ajuste para desktop */
   }
 
   h2 {
-    font-size: 4rem; /* tamanho fonte */
+    font-size: 4rem;
+    /* tamanho fonte */
   }
 }
 
 @media (min-width: 1400px) {
-    h1 {
-        font-size: 6.25rem;
-    }
+  h1 {
+    font-size: 6.25rem;
+  }
 
-    h2 {
-        font-size: 4rem;
-    }
+  h2 {
+    font-size: 4rem;
+  }
 
-    /* SOBRE */
-    h3 {
-        font-size: 3.25rem;
-    }
-    
-    .conhecimento,
-    .projetos,
-    .sobre {
-        padding: 10rem 15rem 4rem;
-    }
-    .conhecimento h2 {
-        font-size: 3.5rem;
-        text-align: start;
-    }
+  /* SOBRE */
+  h3 {
+    font-size: 3.25rem;
+  }
+
+  .conhecimento,
+  .projetos,
+  .sobre {
+    padding: 10rem 15rem 4rem;
+  }
+
+  .conhecimento h2 {
+    font-size: 3.5rem;
+    text-align: start;
+  }
 }
